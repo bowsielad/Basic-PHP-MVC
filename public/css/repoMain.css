@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, body {
+	border: 0;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	line-height: 1em;
+	-webkit-font-smoothing: antialiased;
+    margin:0; padding:0;
+	font-family: 'Roboto', Arial, freesans, sans-serif;
+}
+html{
+background-color: #FDFDFD;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {color:#333;font-size: 1.8em;font-weight: 900; margin:30px 0 20px 0;}
+
+h2 {color:#0067ab;font-size: 1.5em;margin:4% 0 0 0;font-weight: 700;}
+
+h3 {color:#666;font-size: 1.2em;margin:10px 0 0 0;font-weight: 700;}
+
+h3 span{color:#0067ab;}
+
+h3 a{
+	color:#0067ab;
+	text-decoration: underline;
+}
+
+h4 {color: #333;font-size:0.8em; line-height: 1.6em; margin:0;font-weight: 400;}
+
+.grid{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	height:100%;
+	/*background-color:pink;*/
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-2-3 {
+  width: 20%;
+  height:100vh;
+  background-color:lightgrey;
+  padding:20px;
+}
+
+.col-2-3 a {
+	display:block;
+	line-height: 1.4em;
+	font-size: 1.2em;	
+	font-weight: 700;
+	color:#0067ab;
+}
+
+.col-2-3 a:hover {
+	color:#fff;
+}
+
+.col-1-3 {
+  width: 80%;
+  height:100vh;
+  background-color: #FDFDFD;
+  padding:20px;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  font-weight: 700;
+  color:#0067ab;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+[class*='col-']:last-of-type {
+  /*padding-right: 0;
+  padding-left: 0;*/
+}
+
+#logoDiv{ 
+height:auto;  
+max-width:140px;
+width:100%;
+margin:0;
+}
+
+#logo{ 
+height:auto;  
+max-width:140px;
+width:100%;
+
+}
+
+#descriptionWrapper{
+margin-left:auto;
+margin-right:auto;
+width:75%;
+/*background-color:pink;*/
+/*text-align: center;*/
+margin:10px 0 0 0;	
+}
+
+#descriptionWrapper p{
+  line-height: 1.4em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color:#0067ab;
+}
+
+@media screen and (max-width:769px) {
+	
+.grid{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	height:100%;
+	/*background-color:pink;*/
+}
+
+[class*='col-'] {
+  float: none;
+}
+
+.col-2-3 {
+  width: 100%;
+  height:auto;
+  background-color:lightgrey;
+  padding:20px;
+}
+.col-1-3 {
+  width: 100%;
+  height:auto;
+  background-color: #FDFDFD;
+  padding:20px;
+}
+
+
+#descriptionWrapper{
+margin-left:auto;
+margin-right:auto;
+width:100%;
+/*background-color:pink;*/
+/*text-align: center;*/
+margin:10px 0 0 0;	
+}	
+	
+}
